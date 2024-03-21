@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+
+.cities{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    background: white;
+    position: relative;
+}
+.cities::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88%;
+    height: 30vh;
+
+}
+.cities:hover .cities.slide{
+    animation-play-state: paused;
+}
+.city{
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.city img{
+    height: 80px;
+    margin: 0 40px;
+}
+.load{
+    width: 90%;
+    height: 60vh;
+    border: 1px solid ;
+    border-radius: 12px;
+    margin-top: 10%;
+    margin-left: 70px;
+    margin-right: 10%;
+}
+.btn_play{
+    background-color: black;
+    border: none;
+    color: rgb(255, 254, 254);
+    padding: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 30px;
+    text-align: center;
+    margin: 0 0 0 80px;
+}
+.btn_play:hover{
+    background-color: green;
+}
+.andr{
+    height: 40px;
+    float: left;
+    margin-left: 30%;
+}
+.qr-code {
+    width: 200px;
+    margin: 10px;
+   margin-left: 20%;
+  }
+
+.table_6{
+    display: flex;
+    width: 88%;
+    height: 13vh;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 5%;
+    margin-top: 2%;
+} 
+.custom1{
+    width: 20%;
+    height: 10vh;
+    background-color: #de0707;
+    color: yellow;
+}
+.custom2{
+    width: 20%;
+    height: 10vh;
+    background-color: #de0707;
+    color: yellow;
+    margin-left: 2%;
+}
+.custom3{
+    width: 20%;
+    height: 10vh;
+    background-color: #de0707;
+    color: yellow;
+    margin-left: 4%;
+}
+.custom4{
+    width: 20%;
+    height: 10vh;
+    background-color: #de0707;
+    color: yellow;
+    margin-left: 6%;
+}
+.table_7{
+    display: flex;
+    width: 88%;
+    height: 20vh;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.review_1{
+    width: 20%;
+    height: 20vh;
+    background-color:aqua;
+    color: blue;
+}
+.review_2{
+    width: 20%;
+    height: 20vh;
+    background-color:aqua;
+    color: blue;
+    margin-left: 2%;
+}
+.review_3{
+    width: 20%;
+    height: 20vh;
+    background-color:aqua;
+    color: blue;
+    margin-left: 4%;
+}
+.review_4{
+    width: 20%;
+    height: 20vh;
+    background-color:aqua;
+    color: blue;
+    margin-left: 6%;
+
+}
